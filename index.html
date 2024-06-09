@@ -21,20 +21,23 @@
         }
         header {
             text-align: center;
-            padding: 20px 0; /* Reduced padding */
+            padding: 5px 0; /* Reduced padding */
         }
         header h1 {
             font-size: 3em;
             margin: 0;
             color: #00ff00;
         }
-        header p {
-            font-size: 1.2em;
-            margin: 10px 0 0;
-            color: #99cc00;
+        .slider-content {
+            text-align: center;
+            margin: 0; /* Removed margin */
+            color: #00ff00; /* Matching green color */
+            height: 50px; /* Fixed height to prevent jumping */
+            overflow: hidden; /* Hide overflowing content */
         }
         section {
-            margin: 50px 0;
+            margin: 0; /* Removed margin */
+            padding: 20px 0; /* Added padding to compensate */
             text-align: center;
         }
         section h2 {
@@ -45,7 +48,7 @@
         }
         section h3 {
             font-size: 1.8em;
-            margin-top: 30px;
+            margin-top: 20px; /* Reduced margin */
             color: #ffffff;
         }
         ul {
@@ -68,26 +71,6 @@
         }
         a:hover {
             text-decoration: underline;
-        }
-        .typed-section {
-            text-align: center;
-            padding: 10px 0; /* Reduced padding */
-            color: #99cc00;
-        }
-        .typed-section .parent-typed-text {
-            font-size: 1.5em;
-        }
-        .slider-content {
-            text-align: center;
-            margin-top: 50px;
-            color: #00ff00; /* Matching green color */
-            height: 50px; /* Fixed height to prevent jumping */
-            overflow: hidden; /* Hide overflowing content */
-        }
-        .typed_active {
-            font-size: 24px;
-            font-weight: bold;
-            color: #00ff00; /* Matching green color */
         }
     </style>
 </head>
@@ -201,7 +184,7 @@
                     });
                 }
 
-                var arr = ['Cyber Security Analyst', 'Cyber Defender', 'CTF Player', 'SOC Analyst'];
+                var arr = ['Cyber Security Analyst','DFIR Analyst',  'Cyber Defense Analyst', 'CTF Player', 'SOC Analyst'];
                 var i = 0;
                 if ($(".typed_active").length) {
                     var interval = setInterval(function () {
@@ -214,7 +197,7 @@
 
         <section id="about">
             <h2>About Me</h2>
-            <p>I am passionate about cyber security, Digital Forensics and Incident Response (DFIR), and playing Capture The Flag (CTF) challenges. I continually seek to expand my knowledge and skills in the field. You can find my various certifications on my <a href="#" target="_blank">Credly page</a>.</p>
+            <p>I am passionate about cyber security, Digital Forensics and Incident Response (DFIR), and playing Capture The Flag (CTF) challenges. I continually seek to expand my knowledge and skills in the field. 
             <h3>Certifications</h3>
             <ul>
                 <li>GPEN (GIAC Penetration Tester)</li>
